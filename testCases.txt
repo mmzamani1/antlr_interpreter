@@ -1,0 +1,79 @@
+test case #1:
+
+a = 2 + 3 * 4;
+print "a is ", a;
+a = 2 - 1 - 1 - 1;
+print "a is ", a;
+b = 8 / 2 / 2 / 2;
+print "b is ", b;
+a = 2 ^ 3 ^ 2 ^ b;
+print "a is ", a;
+c = 2 ^ 1 ^ 2 ^ 3;
+print "c is ", c;
+d = c ^ 3 * c;
+print "d is ", d;
+e = 3 ^ (3 / 3);
+f = c * c ^ e * e;
+print "f is ", f;
+a = 2 * 2 ^ (3 * 3)
+print "a is ", a;
+
+OUTPUT:
+
+a is 14
+a is -1
+b is 1
+a is 512
+c is 2
+d is 16
+f is 48
+a is 1024
+
+test case #2:
+
+loop a:4 do
+begin
+ if a % 2 == 1 then
+ print "a is odd: ", a;
+ else
+ print "a is even: ", a;
+end
+
+OUTPUT:
+
+a is odd: 1
+a is even: 2
+a is odd: 3
+a is even: 4
+
+test case #3:
+
+for a of 1 to 4 do
+begin
+ if a % 2 == 1 then
+ print "a is odd: ", a;
+end
+
+OUTPUT:
+
+a is odd: 1
+a is odd: 3
+
+test case #4:
+
+a = 4;
+while a > 0 do
+begin
+ if a % 2 == 1 then
+ print "a is odd: ", a;
+ else
+ print "a is even: ", a;
+ a = a - 1;
+end
+
+OUTPUT:
+
+a is even: 4
+a is odd: 3
+a is even: 2
+a is odd: 1
